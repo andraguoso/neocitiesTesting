@@ -1,0 +1,103 @@
+article/*, /*#blog*/,body {
+    background-color:oldlace ;
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px;
+    height: 100vh;
+}
+
+h1 { 
+    color: black; 
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    align-items: center;
+}
+
+#header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button {
+    text-decoration: none;
+    color: #91490e;
+    padding: 8px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #eb9f60;
+    max-width: 200px;
+    max-height: 90px;
+    text-align: center;
+}
+.button:hover {
+    color: #eeac76;
+    padding: 8px;
+    margin-left: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #e3995d;
+    max-width: 200px;
+    text-align: center;
+}
+
+img {
+  padding: 20px;
+  height: 150px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+}
+
+.card { /* blog, nopoint */
+    background-color:antiquewhite;
+    padding:8px;
+    margin:15px;
+    
+}
+#left {
+    float: left;
+    width: 75%;
+}
+#right {
+    float: right;
+    width: 25%;
+}
+
+#banner {
+    display:flex;
+}
+
+.account {
+    background-color: bisque;
+    border-radius: 5px;
+    color:#91490e;
+    padding:5px; margin:5px;
+}
+
+.artist, .artist-desc.open {
+    background-color: bisque;
+    padding:10px; margin:5px;
+    border-radius: 5px;
+}
+.artist-desc.open {
+    max-height:fit-content;
+    display:flex;
+}
+.artist-desc {
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
